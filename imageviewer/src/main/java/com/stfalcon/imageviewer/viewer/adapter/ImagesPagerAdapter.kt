@@ -40,6 +40,7 @@ internal class ImagesPagerAdapter<T>(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val photoView = PhotoView(context).apply {
             isEnabled = isZoomingAllowed
+            setMediumScale(2.5f)
             setOnViewDragListener { _, _ -> setAllowParentInterceptOnEdge(scale == 1.0f) }
         }
 
