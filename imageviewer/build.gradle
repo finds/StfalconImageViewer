@@ -27,7 +27,7 @@ publish {
 dependencies {
     api 'androidx.appcompat:appcompat:1.0.2'
     api 'androidx.transition:transition:1.0.1'
-    implementation 'com.github.chrisbanes:PhotoView:2.2.0'
+    implementation 'com.github.finds:PhotoView:3.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
