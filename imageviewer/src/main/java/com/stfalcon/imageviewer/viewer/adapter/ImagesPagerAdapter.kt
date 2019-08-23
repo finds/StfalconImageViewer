@@ -40,7 +40,8 @@ internal class ImagesPagerAdapter<T>(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val photoView = PhotoView(context).apply {
             isEnabled = isZoomingAllowed
-            setMediumScale(2.5f)
+            setMediumScale(3.0f) //by setting medium scale to the same as medium scale we can disable the middle zoom step
+            setMaximumScale(3.0f)
             setOnViewDragListener { _, _ -> setAllowParentInterceptOnEdge(scale == 1.0f) }
         }
 
